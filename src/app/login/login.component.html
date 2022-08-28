@@ -1,0 +1,51 @@
+
+    <div class="row">
+        <div class="col-md-6">
+            <img src="../../assets/second.jpeg" alt="">
+            <h2>Budget</h2>
+        </div>
+        <div class="col-md-6">
+            <div style="margin-left: 370px;">
+                <p>
+                    Having trouble?<a href="">Get help</a>
+                    <select name="" id="">
+                        <option value="">Eng</option>
+                        <option value="">Hindi </option>
+                        <option value="">Malayalam</option>
+                        <option value="">Tamil</option>
+                    </select>
+                </p>
+    
+
+            </div>
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <div>
+                    <h1>Login In Budget </h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+    
+                <div>
+                    <input type="text" placeholder="email" class="form-control" name="email" formControlName="email">
+                </div>
+                <div *ngIf="this.loginForm.get('email')?.touched&&this.loginForm.get('email')?.errors" style="color: red;">invalid email</div>
+                <br>
+                <div>
+                    <input type="password" class="form-control" placeholder="password" name="pswd" formControlName="pswd">
+                </div>
+                <div *ngIf="this.loginForm.get('pswd')?.touched&&this.loginForm.get('pswd')?.errors" style="color: red;">invalid password</div>
+                <br>
+                <div>
+                    <input type="checkbox">
+                    <label for="">Keep me logged in</label>
+                    <a href="" class="float-right">Forgot password?</a>
+                </div>
+                <div>
+                    <button style="height: 41px; width: 354px;" class="btn btn-primary" type="submit">LogIn</button>
+                </div>
+                <div>
+                    <a href="">Create New Account?</a>
+                </div>
+            </form>
+        </div>
+   </div>
+

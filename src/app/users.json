@@ -1,0 +1,39 @@
+[
+    {
+        "id":1,
+        "name":"Akash",
+        "phone":"984560899",
+        "transaction_cat":"Income",
+        "transaction_amt":700,
+        "account_type":"Savings",
+        "balance_amt":7000
+    },
+    {
+        "id":2,
+        "name":"Ramya",
+        "phone":"884560899",
+        "transaction_cat":"Income",
+        "transaction_amt":690,
+        "account_type":"Savings",
+        "balance_amt":9000
+    },
+    {
+        "id":3,
+        "name":"Rohith",
+        "phone":"968960899",
+        "transaction_cat":"Income",
+        "transaction_amt":800,
+        "account_type":"Savings",
+        "balance_amt":7000
+    },
+    {
+        "id":4,
+        "name":"Vidhya",
+        "phone":"990675899",
+        "transaction_cat":"Income",
+        "transaction_amt":600,
+        "account_type":"sSavings",
+        "balance_amt":4000
+    }
+
+]

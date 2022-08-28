@@ -1,0 +1,98 @@
+<div class="row">
+    <div id="ls" style="border-right:1px solid rgb(148, 144, 144);height:100%;" class="col-md-3">
+        <h1>Budget</h1>
+        <div style="margin-top: 40px;">
+            <span style="margin-top: 40px;"><i class="fas fa-user"></i>Dashboard</span>
+
+        </div>
+
+        <div style="margin-top: 700px;">
+            <a href="">Log Out</a>
+
+
+        </div>
+
+    </div>
+    <div  class="col-md-9">
+        
+
+
+        <h1>Dashboard</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div id="sb">
+            <p>You have 32 Support Request Pending for Response<a href=""> &nbsp; View</a></p>
+        </div>
+        <hr>
+
+         <div class="row">
+             <div id="one" class="col-3">
+                 <h4>Total Users </h4>
+                 <h3>1,567</h3>
+                 <span><button>2.36%↑</button>sSince last month</span>
+             </div>
+             <div id="two" class="col-3">
+                <h4>Savings Account</h4>
+                <h3>1,567</h3>
+                <span><button>2.36%↑</button>Since last month</span>
+
+             </div>
+             <div id="three" class="col-3">
+                <h4>Savings Account </h4>
+                <h3>1,500</h3>
+                <span><button>2.36%↑</button>Since last month</span>
+
+             </div>
+             <div id="four" class="col-3">
+                <h4>Savings Account </h4>
+                <h3>1,567</h3>
+                <span><button>2.36%↑</button>Since last month</span>
+
+             </div>
+         </div>
+
+        <h2>recently active users</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr style="font-size: 15px;">
+                    <th>USER ID/NAME</th>
+                    <th>PHONE NUMBER</th>
+                    <th>TRANSACTION CATEGORY</th>
+                    <th>TRANSACTION AMOUNT</th>
+                    <th>ACCOUNT TYPE</th>
+                    <th>BALANCE AMOUNT</th>
+
+
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let u of users">
+                    <td>{{u.name}}
+                        <br>{{u.id}}
+                    </td>
+                    <td>{{u.phone}}</td>
+                    <td>{{u.transaction_cat}}
+                        <br>
+                        <p>salary</p>
+                    </td>
+                    <td>{{u.transaction_amt}}</td>
+                    <td>{{u.account_type}}</td>
+                    <td>{{u.balance_amt}}</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center;">
+            <button>view All</button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
